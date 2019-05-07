@@ -3,7 +3,7 @@ node_modules
 /dist
 test/*
 e2e/*
-static/*
+
 assets/*
 
 # local env files
