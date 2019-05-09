@@ -50,7 +50,7 @@ export default {
   methods: {
     getImageList (chapterId) {
       this.$store.commit('setLoading', true)
-      axios.get('http://localhost:3001/users/detail', {
+      axios.get('https://yirenzhixia.herokuapp.com/users/details', {
         params: {
           chapterId
         }

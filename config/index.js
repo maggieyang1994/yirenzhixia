@@ -50,6 +50,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    // 加上基路径
     assetsPublicPath: '/yirenzhixia/',
 
     /**

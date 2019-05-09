@@ -19,7 +19,7 @@ const mutations = {
 const actions = {
   getChapterList (context) {
     context.commit('setLoading', true)
-    axios.get('http://localhost:3001/users').then(data => {
+    axios.get('https://yirenzhixia.herokuapp.com/users').then(data => {
       // 获取章节列表
       context.commit('getChapterList', data.data)
       context.commit('setLoading', false)

@@ -4,6 +4,8 @@ import HelloWorld from '@/view/HelloWorld'
 import Detail from '@/view/Detail'
 Vue.use(Router)
 
+
+// travis 构建之后基路径会带上仓库名
 export default new Router({
   mode: 'history',
   base: '/yirenzhixia/',
