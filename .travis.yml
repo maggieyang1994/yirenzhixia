@@ -2,7 +2,7 @@ language: node_js
 node_js: 
 - '8.11.3'
 script: npm run build
-after_script: cp -i ./dist/index.html ./dist/404.html
+after_success: cp -i ./dist/index.html ./dist/404.html
 cache:
  directories: node_modules
 deploy:
