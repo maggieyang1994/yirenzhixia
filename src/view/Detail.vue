@@ -56,14 +56,14 @@ export default {
         }
       }).then(res => {
         this.$store.commit('setLoading', false)
-        localStorage.setItem('history', JSON.stringify({chapter: this.curChapter, path: this.$route.path}))
+        localStorage.setItem('history', JSON.stringify({chapter: this.curChapter, path: 'https://maggieyang1994.github.io/yirenzhixia' + this.$route.path}))
         this.imageList = res.data
       })
     }
   },
   computed: {
     curChapter () {
-      return this.$store.state.chapter.chapterList.length && this.$store.state.chapter.chapterList.find(x => x.chapterId === this.chapterId * 1).chapter
+      return this.$store.state.chapter.chapterList.length ? this.$store.state.chapter.chapterList.find(x => x.chapterId === this.chapterId * 1).chapter : localStorage.getItem("history").chapter
     },
     loading () {
       return this.$store.state.chapter.loading
