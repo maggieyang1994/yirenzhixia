@@ -63,7 +63,7 @@ export default {
   },
   computed: {
     curChapter () {
-      return this.$store.state.chapter.chapterList.length ? this.$store.state.chapter.chapterList.find(x => x.chapterId === this.chapterId * 1).chapter : localStorage.getItem("history").chapter
+      return this.$store.state.chapter.chapterList.length ? this.$store.state.chapter.chapterList.find(x => x.chapterId === this.chapterId * 1).chapter : JSON.parse(localStorage.getItem("history")).chapter
     },
     loading () {
       return this.$store.state.chapter.loading
