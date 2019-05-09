@@ -13,3 +13,4 @@ deploy:
   local_dir: ./dist
   on:
     branch: master
+after_script: cp -i index.html 404.html
