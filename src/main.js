@@ -4,11 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
+import Chat from "vue-beautiful-chat"
 import 'element-ui/lib/theme-chalk/index.css'
 import store from '@/store/index.js'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(Chat)
 // 以一个vue的实例 来传递事件
 // Vue.prototype.$bus = new Vue()
 // const bus = new Vue()
