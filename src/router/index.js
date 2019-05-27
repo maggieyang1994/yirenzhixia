@@ -4,6 +4,7 @@ import HelloWorld from '@/view/HelloWorld'
 import Detail from '@/view/Detail'
 import Chat from '@/view/chatRoom.vue'
 import Login from '@/view/login.vue'
+import d3 from '@/view/d3.vue'
 Vue.use(Router)
 
 
@@ -18,7 +19,7 @@ var router = new Router({
       component: Login 
     },
     {
-      path: '/diretory',
+      path: '/directory',
       name: 'HelloWorld',
       component: HelloWorld,
       meta: { requiresAuth: true }
@@ -35,6 +36,12 @@ var router = new Router({
       path: "/chat",
       name: 'chat',
       component: Chat,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: "/d3",
+      name: 'd3',
+      component: d3,
       meta: { requiresAuth: true }
     }
   ],
